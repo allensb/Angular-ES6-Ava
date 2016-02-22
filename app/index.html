@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title data-ng-bind="title">Angular - ES6</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+
+    <!-- Bootstrap -->
+    <link href="bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+    <link href="css/app.css" rel="stylesheet">
+</head>
+<body ng-app="app">
+
+<header class="clearfix">
+    <nav class="navbar"><a href="#/">Angular - ES6</a></nav>
+</header>
+
+<ul id="nav" class="side-nav fixed" style="width: 240px;">
+    <li class="bold"><a href="#/home">Home</a></li>
+    <li class="bold"><a href="#/scope">Scope</a></li>
+    <li class="bold"><a href="#/arrow">Arrow</a></li>
+    <li class="bold"><a href="#/mapssets">Maps & Sets</a></li>
+    <li class="bold"><a href="#/default">Default</a></li>
+    <li class="bold"><a href="#/class">Class</a></li>
+    <li class="bold"><a href="#/objectliterals">Object Literals</a></li>
+    <li class="bold"><a href="#/destructuring">Destructuring</a></li>
+    <li class="bold"><a href="#/spread">Spread</a></li>
+    <li class="bold"><a href="#/rest">Rest</a></li>
+    <li class="bold"><a href="#/templates">Templates</a></li>
+    <li class="bold"><a href="#/generators">Generators</a></li>
+    <li class="bold"><a href="#/proxies">Proxies</a></li>
+    <li class="bold"><a href="#/promises">Promises</a></li>
+    <li class="bold"><a href="#/symbol">Symbol</a></li>
+    <li class="bold"><a href="#/misc">Misc</a></li>
+</ul>
+
+<section class="main-content center">
+    <ui-view></ui-view>
+</section>
+
+<script src="scripts/browser-polyfill.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+<script src="bundle.js"></script>
+
+</body>
+</html>
