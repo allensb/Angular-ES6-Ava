@@ -41,6 +41,7 @@ gulp.task('babel', function () {
         .pipe(babel({
             modules : "system"
         }))
+        .pipe(concat('app.js'))
         .pipe(gulp.dest(config.dist));
 });
 
@@ -52,7 +53,7 @@ gulp.task('systemjs-build', function () {
         transpiler: 'babel'
     });
 
-    builder.buildStatic('app', config.dist_file, options)
+    builder.buildStatic('app.js', config.dist_file, options)
         .then(function() {
             gutil.log('Build Bundle', gutil.colors.cyan('done'));
         })

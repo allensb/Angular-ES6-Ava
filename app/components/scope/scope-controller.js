@@ -49,4 +49,4 @@ class ScopeController {
 
 ScopeController.$inject = ['$timeout'];
 
-module.exports = ScopeController;
+export default ScopeController;

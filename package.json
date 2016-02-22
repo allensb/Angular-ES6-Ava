@@ -27,12 +27,14 @@
     "gulp-connect": "^2.2.0",
     "gulp-jshint": "^1.11.2",
     "jshint-stylish": "^1.0.1",
-    "systemjs-builder": "^0.9.1"
+    "systemjs-builder": "^0.15.9"
   },
   "ava": {
     "files": [
       "app/test/*.js"
     ],
-    "require": ["babel-core/register"]
+    "require": [
+      "babel-core/register"
+    ]
   }
 }
